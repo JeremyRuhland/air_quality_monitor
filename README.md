@@ -29,4 +29,4 @@ Installed local user systemd services to periodically run the scripts, enabled a
 * owm_weather.service
 * owm_weather.timer
 
-![Dashboard](https://raw.githubusercontent.com/JeremyRuhland/air_quality_monitor/dashboard.jpg)
+![Dashboard](https://raw.githubusercontent.com/JeremyRuhland/air_quality_monitor/master/dashboard.jpg)
