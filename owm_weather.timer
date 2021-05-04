@@ -1,0 +1,11 @@
+[Unit]
+Description=Collect data from open weather map API every hour
+Requires=owm_weather.service
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=30min
+
+[Install]
+WantedBy=timers.target
+

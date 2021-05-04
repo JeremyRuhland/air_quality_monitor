@@ -1,0 +1,11 @@
+[Unit]
+Description=Collect data from open weather map API
+After=network.target influxdb.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/local/bin/owm_weather.py
+
+[Install]
+WantedBy=default.target
+

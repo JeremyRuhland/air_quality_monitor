@@ -1,0 +1,11 @@
+[Unit]
+Description=Collect data from awair air quality monitor on LAN
+After=network.target influxdb.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/local/bin/awair_air_quality_monitor.py
+
+[Install]
+WantedBy=default.target
+

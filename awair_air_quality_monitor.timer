@@ -1,0 +1,11 @@
+[Unit]
+Description=Collect data from awair air quality monitor on LAN every minute
+Requires=awair_air_quality_monitor.service
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+
+[Install]
+WantedBy=timers.target
+
